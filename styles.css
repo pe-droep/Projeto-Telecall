@@ -1,0 +1,84 @@
+/* Defina estilos globais, incluindo o seletor universal (*) para resetar margens e preenchimento padrão. */
+
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+/* Estilize o corpo do documento. */
+
+body {
+    background-color:#269eee;
+    height: 1000px;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+}
+
+.bloco{
+    margin: 80px;
+    width: 800px;
+    height: 800px;
+    background-color:white;
+    border-radius: 30px;
+}
+
+#botaoHome{
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+}
+/* Estilos para o contêiner. */
+
+.container {
+    width: 100% ;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Estilize rótulos, entradas e seleções de formulário. */
+.required{
+    border-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.seletorSexo{
+    border: 5px;
+    border-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+}
+label,
+input,
+select {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilos para botões. */
+
+button {
+    background-color: #1e79b6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4988b3;
+}

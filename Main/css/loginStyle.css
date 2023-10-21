@@ -13,12 +13,13 @@ body {
 }
 
 .bloco {
-    display: flex;
     margin: 20px;
-    width: 800px;
-    height: 600px;
+    max-width: 800px;
+    width: 100%;
     background-color: white;
     border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -48,4 +49,24 @@ button {
 
 button:hover {
     background-color: #4988b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bloco {
+        margin: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    /* Colocar apenas dois itens por linha no formulário em telas menores */
+    form {
+        flex-direction: column;
+    }
+
+    .input-container {
+        width: 100%;
+    }
 }
